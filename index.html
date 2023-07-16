@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/mobile.css" />
     <link rel="stylesheet" href="./css/tablet.css" />
     <link rel="stylesheet" href="./css/desktop.css" />
@@ -98,7 +98,7 @@
       <!-- /Hero section -->
 
       <!-- About section -->
-      <!-- <section class="about">
+      <section class="about">
         <div class="container about-container">
           <ul class="about-list list">
             <li class="about-item">
@@ -132,10 +132,10 @@
               always "on the same wave" with clients. Therefore, we are always
               ready to improve everyone who comes to us!
             </p>
-            <button type="button" class="about-btn btn">ONLINE-BOOKING</button>
+            <button type="button" data-modal-open class="about-btn btn" >ONLINE-BOOKING</button>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- /About section -->
 
       <!-- Section Services -->
@@ -183,13 +183,13 @@
               </li>
             </ul>
           </div>
-          <button type="button" class="prices-btn btn">ONLINE-BOOKING</button>
+          <button type="button" data-modal-open class="prices-btn btn">ONLINE-BOOKING</button>
         </div>
       </section>
       <!-- /Section Services -->
 
       <!-- Section Feature -->
-      <!-- <section class="benefits">
+      <section class="benefits">
         <div class="container benefits-container">
           <ul class="benefits-list list">
             <li class="benefits-item">
@@ -218,7 +218,7 @@
             </p>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- /Section Feature -->
 
       <!-- Section Team -->
@@ -317,6 +317,36 @@
               <div class="barbers-content">
                 <h3 class="barbers-item-title">Michele Doe</h3>
                 <p class="barbers-item-text">Extreme Barber</p>
+                <ul class="barbers-social-list list">
+                    <li class="barbers-social-item">
+                      <a href="" class="barbers-social-link link">
+                        <svg class="barbers-social-icon" width="20" height="20">
+                          <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="barbers-social-item">
+                      <a href="" class="barbers-social-link link">
+                        <svg class="barbers-social-icon" width="20" height="20">
+                          <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="barbers-social-item">
+                      <a href="" class="barbers-social-link link">
+                        <svg class="barbers-social-icon" width="20" height="20">
+                          <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="barbers-social-item">
+                      <a href="" class="barbers-social-link link">
+                        <svg class="barbers-social-icon" width="20" height="20">
+                          <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
               </div>
             </li>
             <li class="barbers-item">
@@ -329,6 +359,36 @@
               <div class="barbers-content">
                 <h3 class="barbers-item-title">Alan Black</h3>
                 <p class="barbers-item-text">Extreme Barber</p>
+                <ul class="barbers-social-list list">
+                    <li class="barbers-social-item">
+                      <a href="" class="barbers-social-link link">
+                        <svg class="barbers-social-icon" width="20" height="20">
+                          <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="barbers-social-item">
+                      <a href="" class="barbers-social-link link">
+                        <svg class="barbers-social-icon" width="20" height="20">
+                          <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="barbers-social-item">
+                      <a href="" class="barbers-social-link link">
+                        <svg class="barbers-social-icon" width="20" height="20">
+                          <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="barbers-social-item">
+                      <a href="" class="barbers-social-link link">
+                        <svg class="barbers-social-icon" width="20" height="20">
+                          <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
               </div>
             </li>
           </ul>
@@ -390,7 +450,7 @@
       <!-- /Section Gallery  -->
 
       <!-- Section Contact -->
-      <!-- <section class="contact" id="contact">
+      <section class="contact" id="contact">
         <div class="container contact-container">
           <div class="contact-form">
             <h2 class="contact-title title">Online-booking</h2>
@@ -481,10 +541,10 @@
             <p class="contact-hours">Every day from 9:00 to 22:00</p>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- /Section Contact -->
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-container">
         <p>&copy;Copyright 2020</p>
         <ul class="social-list list">
@@ -510,7 +570,7 @@
           </li>
         </ul>
       </div>
-    </footer> -->
+    </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" data-modal-close class="modal-close">X</button>
@@ -569,14 +629,14 @@
             ></textarea>
           </div>
           <div class="form-group">
-            <!-- <label for="option-1">Option 1</label>
+            <label for="option-1">Option 1</label>
             <input
               type="radio"
               id="option-1"
               name="option"
               value="option-1"
               checked
-            /> -->
+            />
 
             <input
               type="checkbox"
